@@ -24,7 +24,7 @@ class _WidgetTreeState extends State<WidgetTree> {
     return Scaffold(
       body: pages.elementAt(currentPage),
       bottomNavigationBar: NavigationBar(
-        destinations: [
+        destinations: const [
           NavigationDestination(
               icon: Icon(Icons.text_fields), label: 'Descripcion'),
           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
