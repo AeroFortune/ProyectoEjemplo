@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_ejemplo/components/my_textfield.dart';
 import 'package:proyecto_ejemplo/components/my_button.dart';
-import 'package:proyecto_ejemplo/pages/home_page.dart';
 import 'package:proyecto_ejemplo/pages/register_page.dart';
 import 'package:proyecto_ejemplo/widget_tree.dart';
 
