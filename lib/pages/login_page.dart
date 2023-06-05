@@ -14,14 +14,16 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Flutter es okay'), backgroundColor: Colors.blue),
-      body: Column(
+          title: const Text('Iniciar Sesión'), backgroundColor: Colors.blue),
+      body: Wrap(
         children: [
           const Padding(
             padding: EdgeInsets.only(top: 16.0),
-            child: Text(
-              'Bienvenido!',
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+            child: Center(
+              child: Text(
+                'Bienvenido!',
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold,),
+              ),
             ),
           ),
           Padding(

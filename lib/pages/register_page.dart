@@ -16,14 +16,16 @@ class RegisterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Flutter es okay'), backgroundColor: Colors.lightGreenAccent[100]),
-      body: Column(
+          title: const Text('Registro de Cuenta'), backgroundColor: Colors.lightGreenAccent[100]),
+      body: Wrap(
         children: [
           const Padding(
             padding: EdgeInsets.only(top: 16.0),
-            child: Text(
-              'Registrarse',
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+            child: Center(
+              child: Text(
+                'Registrarse',
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
 
@@ -34,6 +36,15 @@ class RegisterPage extends StatelessWidget {
                 hintText: 'Introduzca nombre!',
                 obscureText: false),
           ),
+
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+            child: MyTextField(
+                controller: cedulaController,
+                hintText: 'Introduzca cedula!',
+                obscureText: false),
+          ),
+
 
           Padding(
             padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
