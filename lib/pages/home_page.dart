@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Hola!')),
+      appBar: AppBar(title: Text('Hola!', style: TextStyle(fontWeight: FontWeight.bold), ), centerTitle: true),
       body: Center(
         child: GradientText('Bienvenido al Programa!', gradient: LinearGradient(
             colors: [Colors.blue.shade500, Colors.purple.shade900]),

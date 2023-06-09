@@ -5,6 +5,17 @@ class InfoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return Hero(
+      tag: 'bottomNav',
+      child: Scaffold(
+        appBar: AppBar(
+          automaticallyImplyLeading: true,
+          title: Text('Descripcion del Proyecto'),
+        ),
+        body: Column(children: [
+          Text('Holaaaa'),
+        ]),
+      ),
+    );
   }
 }

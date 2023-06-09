@@ -16,63 +16,65 @@ class RegisterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Registro de Cuenta'), backgroundColor: Colors.lightGreenAccent[100]),
-      body: Wrap(
-        children: [
-          const Padding(
-            padding: EdgeInsets.only(top: 16.0),
-            child: Center(
-              child: Text(
-                'Registrarse',
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+          title: const Text('Registro de Cuenta'), backgroundColor: Colors.lightGreenAccent[100], centerTitle: true),
+      body: SingleChildScrollView(
+        child: Wrap(
+          children: [
+            const Padding(
+              padding: EdgeInsets.only(top: 16.0),
+              child: Center(
+                child: Text(
+                  'Registrarse',
+                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
-          ),
 
-          Padding(
-            padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-            child: MyTextField(
-                controller: nombreController,
-                hintText: 'Introduzca nombre!',
-                obscureText: false),
-          ),
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+              child: MyTextField(
+                  controller: nombreController,
+                  hintText: 'Introduzca nombre!',
+                  obscureText: false),
+            ),
 
-          Padding(
-            padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-            child: MyTextField(
-                controller: cedulaController,
-                hintText: 'Introduzca cedula!',
-                obscureText: false),
-          ),
-
-
-          Padding(
-            padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-            child: MyTextField(
-                controller: usernameController,
-                hintText: 'Introduzca usuario!',
-                obscureText: false),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-            child: MyTextField(
-                controller: passwordController,
-                hintText: 'Introduzca contraseña!',
-                obscureText: true),
-          ),
-          MyButton(
-              onTap: () {
-                Navigator.pop(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LoginPage(),
-                    ));
-              },
-              insertText: "Registrarse!"),
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+              child: MyTextField(
+                  controller: cedulaController,
+                  hintText: 'Introduzca cedula!',
+                  obscureText: false),
+            ),
 
 
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+              child: MyTextField(
+                  controller: usernameController,
+                  hintText: 'Introduzca usuario!',
+                  obscureText: false),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+              child: MyTextField(
+                  controller: passwordController,
+                  hintText: 'Introduzca contraseña!',
+                  obscureText: true),
+            ),
+            MyButton(
+                onTap: () {
+                  Navigator.pop(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LoginPage(),
+                      ));
+                },
+                insertText: "Registrarse!"),
 
-        ],
+
+
+          ],
+        ),
       ),
     );
   }
