@@ -33,6 +33,7 @@ class RegisterPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: MyTextField(
+                  icon: Icons.password,
                   controller: nombreController,
                   hintText: 'Introduzca nombre!',
                   obscureText: false),
@@ -41,6 +42,7 @@ class RegisterPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: MyTextField(
+                  icon: Icons.password,
                   controller: cedulaController,
                   hintText: 'Introduzca cedula!',
                   obscureText: false),
@@ -50,6 +52,7 @@ class RegisterPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: MyTextField(
+                  icon: Icons.password,
                   controller: usernameController,
                   hintText: 'Introduzca usuario!',
                   obscureText: false),
@@ -57,6 +60,7 @@ class RegisterPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: MyTextField(
+                  icon: Icons.password,
                   controller: passwordController,
                   hintText: 'Introduzca contraseña!',
                   obscureText: true),

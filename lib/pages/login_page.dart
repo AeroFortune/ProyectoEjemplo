@@ -28,21 +28,22 @@ class _LoginPageState extends State<LoginPage> {
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
           title: const Text('Iniciar Sesión', textAlign: TextAlign.center), backgroundColor: Colors.blue, centerTitle: true,),
-      body: Padding(
-        padding: const EdgeInsets.only(top: 50.0),
+      body: Container(
+        constraints: BoxConstraints.expand(),
         child: SingleChildScrollView(
           child: Wrap(
             children: [
               const Padding(
-                padding: EdgeInsets.only(top: 16.0),
+                padding: EdgeInsets.only(top: 26.0),
                 child: Center(
-                  child: GradientText('Bienvenido!', gradient: LinearGradient(colors: [Colors.greenAccent, Colors.lightBlue]) , style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold),
+                  child: GradientText('Bienvenido!', gradient: LinearGradient(colors: [Colors.greenAccent, Colors.lightBlue]) , style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold, ),
                   ),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
                 child: MyTextField(
+                    icon: Icons.person_2_outlined,
                     controller: usernameController,
                     hintText: 'Introduzca usuario!',
                     obscureText: false),
@@ -50,6 +51,7 @@ class _LoginPageState extends State<LoginPage> {
               Padding(
                 padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
                 child: MyTextField(
+                    icon: Icons.password,
                     controller: passwordController,
                     hintText: 'Introduzca contraseña!',
                     obscureText: true),

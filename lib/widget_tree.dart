@@ -39,9 +39,9 @@ class _WidgetTreeState extends State<WidgetTree> {
             children: pages,
           ),
         ),
-        bottomNavigationBar: BottomNavigationBar
-          (currentIndex: currentPage,
-          backgroundColor: Colors.lightBlue[50],
+        bottomNavigationBar: BottomNavigationBar(
+            currentIndex: currentPage,
+          backgroundColor: Colors.grey[50],
           selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
           selectedItemColor: Colors.indigo,
           onTap: (int value) {
