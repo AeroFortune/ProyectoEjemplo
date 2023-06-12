@@ -10,7 +10,10 @@ class EventosPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text("Eventos"), backgroundColor: Colors.lightBlue[50]),
+          leading: IconButton(onPressed: (){
+            Navigator.pop(context);
+          }, icon: const Icon(Icons.exit_to_app,)),
+          title: const Text("Eventos", style: TextStyle(fontWeight: FontWeight.bold),), backgroundColor: Colors.lightBlue[50]),
       body: const SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(top: 8.0),
